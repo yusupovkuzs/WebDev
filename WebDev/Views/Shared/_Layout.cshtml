@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    @await Html.PartialAsync("MetatagsPartial")
+	@await Html.PartialAsync("CssPartial")
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+	    @await Html.PartialAsync("IntroPartial")
+        @await Html.PartialAsync("HeaderPartial")
+		@await Html.PartialAsync("NavPartial")
+   
+
+		<!-- Main -->
+        <div id="main">
+
+            @RenderBody()
+
+        </div>
+
+        @await Html.PartialAsync("FooterPartial")
+		@await Html.PartialAsync("CopyrightPartial")
+		@await Html.PartialAsync("ScriptsPartial")
+
+    </div>
+</body>
+</html>
